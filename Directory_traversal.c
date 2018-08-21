@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
     if( 0 == ntot ) //因为计算百分比，要做除数，除数不能为0
         ntot = 1;
     //输出各种文件的数量及所占的比例
+    printf("Search result:\n");
     printf("     files sum = %7ld\n\n",ntot);
     printf("  reglar files = %7ld, %5.2lf %% \n",nreg, nreg*100.0/ntot);
     printf("   directories = %7ld, %5.2lf %% \n",ndir, ndir*100.0/ntot);
