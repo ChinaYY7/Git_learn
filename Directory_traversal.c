@@ -1,4 +1,4 @@
-//递归降序遍历目录层次结构，并按文件类型计数
+//递归降序遍历目录层次结构，并按文件类型计数4-22
 #include"apue.h"
 #include<dirent.h>
 #include<limits.h>
