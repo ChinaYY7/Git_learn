@@ -14,7 +14,11 @@ int main(int argc, char *argv[])
 {
     int ret;   //保存遍历函数的返回值，结果总为0
     if (argc != 2)
+    {   
         perror("usage: ftw4 <starting-pathname>");
+        exit(0);
+    }
+        
     ret = myftw(argv[1], myfunc);//根据输入的路径为遍历起始点
     ntot = nreg + ndir + nblk + nchr + nfifo + nslink + nsock;//所有文件数量的和，计算百分比
     if( 0 == ntot ) //因为计算百分比，要做除数，除数不能为0
